@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>OldTownRoad</title>
+<style>
+    h1 {color:red;}
+    p {color:blue;}
+</style>
+</head>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/w2Ov5jzm3j8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+<body>
+
+<h1>Google Map</h1>    
+<div id="googleMap" style="width:100%;height:400px;"></div>
+
+<script>
+function myMap() {
+var mapProp= {
+    center:new google.maps.LatLng(51.508742,-0.120850),
+    zoom:5,
+};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap">
+</script>
+
+<audio controls>
+    <source src="horse.ogg" type="audio/ogg">
+    <source src="horse.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<h1>API keys?</h1>
+<p>so much work to get google map working</p>
+
+</body>
+</html>
